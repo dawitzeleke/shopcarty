@@ -1,6 +1,6 @@
 "use client";
 
-import { headerDate } from "@/constants/data";
+import { headerData } from "@/constants/data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -10,7 +10,7 @@ const pathName = usePathname();
 console.log(pathName);
   return (
     <div className="hidden md:inline-flex w-1/3 items-center gap-7 text-sm capitalize font-semibold text-lightColor">
-      {headerDate?.map((item) => (
+      {headerData?.map((item) => (
         <Link
           key={item?.title}
           href={item.href}

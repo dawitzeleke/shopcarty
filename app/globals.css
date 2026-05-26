@@ -138,9 +138,12 @@
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans;
+    @apply font-poppins;
   }
   .hoverEffect{
-    @apply transition-all
+    @apply transition-all duration-300 ease-in-out;
+  }
+  button {
+    @apply hover:cursor-pointer;
   }
 }
